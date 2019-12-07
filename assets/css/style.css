@@ -1,0 +1,320 @@
+/* Global CSS START */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #efefef;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #151965;
+    position: relative;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+h1::after,
+h2::after,
+h3::after,
+h4::after,
+h5::after,
+h6::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background: #46b5d1;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    bottom: -5px;
+}
+
+
+
+a,
+a:visited {
+    color: #32407b;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #46b5d1;
+}
+
+section {
+    padding: 50px 15px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.bg-primary {
+    background-color: #151965;
+}
+
+.bg-primary h2 {
+    color: #ffffff;
+}
+
+/* Global CSS END */
+
+/* Header CSS START */
+header {
+    background: #151965;
+    ;
+    padding: 20px 0px;
+}
+
+.intro-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.intro-title h1::after {
+    right: unset;
+}
+
+.intro-title h1 {
+    color: #ffffff;
+}
+
+
+.intro-title img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    object-fit: cover;
+    pointer-events: none;
+    border: 3px solid #46b5d1;
+}
+
+/* Header CSS END */
+
+
+/* Contact CSS START */
+.contact-info {}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-info p img {
+    width: 25px;
+    margin-right: 15px;
+    pointer-events: none;
+}
+
+.contact-info p span {
+    width: 140px;
+}
+
+.contact-info p a {
+    margin-left: 5px;
+}
+
+/* Contact CSS END */
+
+
+/* Education CSS START */
+table {
+    width: 100%;
+    border-spacing: 0;
+    box-shadow: 0px 5px 20px 8px rgba(0, 0, 0, 0.15);
+    background: white;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #eaeaea;
+}
+
+table thead th {
+    padding: 10px 5px;
+    background-color: #32407b;
+    color: #fff;
+    text-align: left;
+}
+
+table tbody td {
+    padding: 10px 10px;
+    color: #222;
+    text-align: left;
+}
+
+/* Education CSS END */
+
+
+/* Social CSS START */
+.scocial-links {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.scocial-links li {
+    list-style: none;
+}
+
+
+.scocial-links li a i {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #f65c78;
+    color: white;
+    font-size: 30px;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+
+.scocial-links li a:hover i {
+    background-color: #151965;
+    transform: scale(.9);
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    -ms-transform: scale(.9);
+    -o-transform: scale(.9);
+}
+
+/* Social CSS END */
+
+/* Hobby CSS START */
+#hobby {
+    background: #151965;
+}
+
+.hobby-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hobby {
+    flex: 0 0 33%;
+    position: relative;
+    margin: 0;
+    height: 300px;
+}
+
+
+.hobby::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(246, 92, 120, .75);
+    opacity: 0;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+.hobby:hover::before {
+    opacity: 1;
+}
+
+.hobby img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.hobby p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    opacity: 0;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+
+}
+
+.hobby:hover p {
+    opacity: 1;
+}
+
+/* Hobby CSS END */
+
+
+/* Pernoal Info CSS START */
+.personal-info {}
+
+.personal-info p {
+    margin-left: 40px;
+    position: relative;
+}
+
+.personal-info p::before {
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: 6px;
+    width: 6px;
+    height: 6px;
+    background: #151965;
+    border-radius: 50%;
+    border: 3px solid #f65c78;
+}
+
+.personal-info p span {
+    font-weight: 700;
+    width: 180px;
+    display: inline-block;
+}
+
+/* Pernoal Info CSS END */
+
+
+
+/* Footer CSS START */
+footer {
+    padding: 15px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Footer CSS END */
